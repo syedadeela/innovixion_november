@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Countdown Timer</title>
+  <title>Challenging Quiz App</title>
 </head>
 <body>
-  <ul>
-    <li>
-      <label style="color: lightsalmon;"   for="end-date"><strong>end date and time:</strong></label>
-      <input style="background-color: cornsilk;" type="datetime-local" id="end-date">
-    </li>
-    <div style="align-items: center;" id="countdown-container">
-      <div style="align-items: center;" id="countdown">--:--:--</div>
-      <div>
-        <button style="align-items: center;" onclick="startCountdown()">Start Countdown</button>
-      </div>
-    </div>
-  </ul>
-
-  <audio id="buzzer" src="buzzer.mp3"></audio>
-
+  <div class="quiz-container">
+    <div id="question">Question goes here</div>
+    <div id="options" class="option"></div>
+    <button id="submit">Submit</button>
+    <button id="reset">Reset</button>
+    <div id="time-remaining">30 seconds remaining</div>
+  </div>
+  <div id="result"></div>
   <script src="script.js"></script>
 </body>
 </html>

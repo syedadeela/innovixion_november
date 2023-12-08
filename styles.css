@@ -1,41 +1,50 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 10px;
-  background:url('circleback.jpg');
-
-}
-#countdown-container {
-  text-align: center;
-  -webkit-text-size-adjust: 5px;
-  background: url('bg.jpg');
-  overflow:hidden;
-
-}
-#countdown {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  border: 5px solid #3498db;
-  font-size: 1.5em;
-  line-height: 200px;
-  color: #3498db;
-  position: relative;
-  margin: 20px;
-}
-#countdown::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  top: -5px;
-  left: -5px;
-  z-index: -1;
-}
-button {
-  align-items: center;
-}
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e0f7fa; /* Light blue background color */
+  }
+  
+  .quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .option {
+    margin: 10px 0;
+    background-color: #81c784; /* Light green background color for options */
+    color: #fff; /* White text color for options */
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  #time-remaining {
+    margin-bottom: 10px;
+    color: #d32f2f; /* Dark red text color for time remaining */
+  }
+  
+  #submit, #reset {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff; /* White text color for buttons */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #submit {
+    background-color: #1976d2; /* Dark blue background color for submit button */
+  }
+  
+  #reset {
+    background-color: #d32f2f; /* Dark red background color for reset button */
+    margin-left: 10px;
+  }
+  
